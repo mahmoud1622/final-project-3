@@ -1,3 +1,6 @@
+
+   new WOW().init();
+
 const btnscrolltotp= document.querySelector("#btnscrolltotp");
 
 $(document).ready(function(){
@@ -8,6 +11,31 @@ btnscrolltotp.addEventListener("click",function(){
 });
 
 });
+
+li = $('.moon li');
+li.eq('1').css('background','red');
+li.eq('2').css('background','blue');
+li.eq('3').css('background','black');
+li.eq('4').css('background','green');
+
+$('.btn-moon').click(function(){
+
+$('.mode ul').slideToggle(function(){
+
+ $('li').click(function(){
+$('body').css({
+width :'100%',
+height:'100vh',
+background :$(this).css( 'background'),
+color:'rgb(156, 148, 148)'
+
+})
+} )
+})
+
+})
+
+
 
 $('.mohm1').click(function(){
 
